@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Brutalist Style Menu</title>
+   <!-- stylesheet -->
+   <link rel="stylesheet" href="stylesheet.css">
+   <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+   <!-- jquery + tweenmax cdns -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="menu-btn">menu</div>
+      <div class="menu-container">
+         <div class="items-section">
+            <ul>
+               <li><a href="#">home</a></li>
+               <li><a href="https://www.bryanserrano.com">portfolio</a></li>
+            </ul>
+         </div>
+         <div class="social-section">
+            <div class="txt">
+               <ul>
+                   <li><i class="fa fa-instagram fa" style="
+                    width: 20px;"></i><a href="https://www.instagram.com/its_serrano">instagram</a></li>
+                   <li><i class="fa fa-linkedin fa" style="
+                    width: 20px;"></i><a href="https://www.linkedin.com/in/bryan-serrano/">linkedin</a></li>
+                    <li><i class="fa fa-github fa" style="
+                    width: 20px;"></i><a href="www.https://github.com/bryanserranogithub?tab=repositories.com/in/bryan-serrano/">github</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script>
+      var t1 = new TimelineMax({paused: true});
+      t1.from(".menu-container", 1, {
+         left: "-25%",
+         ease: Power4.easeInOut
+      });
+
+      t1.reverse();
+         $(document).on("click", ".menu-btn", function() {
+         t1.reversed(!t1.reversed());
+      });
+   </script>
+</body>
+</html>
