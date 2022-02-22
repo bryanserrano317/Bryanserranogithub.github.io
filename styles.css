@@ -214,6 +214,7 @@ a, a:hover, a:focus, a:active, a:visited{
      --num-cols: 2;
      --row-height: 200px;
    }
+}
 
 @media screen and (max-width: 735px) {
    .header h1 {
