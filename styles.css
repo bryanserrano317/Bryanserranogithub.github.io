@@ -18,17 +18,21 @@ html, body {
 .background-image {
     background-image: url('./clouds.gif');
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
     opacity: 1.0
 }
 
-a { color: inherit; } 
+.background-image-repeat {
+   background-image: url('./clouds.gif');
+   background-repeat: repeat-y;
+   background-size: cover;
+   opacity: 1.0
+}
 
-a:visited { 
-   text-decoration: none; 
-   color: white; 
-  }
+a, a:hover, a:focus, a:active, a:visited{
+   text-decoration: none;
+   color: inherit;
+}
 
 .header,
 .nav-header {
@@ -149,6 +153,67 @@ a:visited {
    opacity: 1;
    color:rgb(255, 255, 255);
 }
+
+.personal-header{
+   margin: auto;
+   width: 50%;
+   overflow: hidden
+}
+
+.personal-header h1{
+   text-align: center;
+   font-size: 5vw;
+   color:rgb(255, 255, 255);
+}
+
+.textBox{
+   margin: auto;
+   margin-top: 5%;
+   width: 100%;
+   padding: 10px;
+   overflow: hidden
+}
+
+.textBox p1{
+   text-align: center;
+   font-size: 2vw;
+   color:rgb(255, 255, 255);
+}
+
+
+.image-grid {
+   --gap: 16px;
+   --num-cols: 4;
+   --row-height: 300px;
+ 
+   box-sizing: border-box;
+   padding: var(--gap);
+ 
+   display: grid;
+   grid-template-columns: repeat(var(--num-cols), 1fr);
+   grid-auto-rows: var(--row-height);
+   gap: var(--gap);
+ }
+ 
+ .image-grid > img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .image-grid-col-2 {
+   grid-column: span 2;
+ }
+ 
+ .image-grid-row-2 {
+   grid-row: span 2;
+ }
+ 
+ @media screen and (max-width: 1024px) {
+   .image-grid {
+     --num-cols: 2;
+     --row-height: 200px;
+   }
 
 @media screen and (max-width: 735px) {
    .header h1 {
