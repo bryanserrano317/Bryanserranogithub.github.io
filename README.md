@@ -15,9 +15,6 @@ Mobile View:
 
 ![image](https://user-images.githubusercontent.com/75232089/154739735-ed6c0335-b2c3-4d3d-92fa-ddfae14f944b.png)
 
-professional page:
-
-<img width="791" alt="Screen Shot 2022-02-18 at 12 45 03 PM" src="https://user-images.githubusercontent.com/75232089/154735041-ec274faf-9b4f-4527-bb6c-6c81f6844d70.png">
 
 
 
